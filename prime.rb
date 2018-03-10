@@ -3,4 +3,5 @@ def prime?(num)
   prime.each do |i|
     prime.delete_if{|j| j % i == 0 && j != i} 
   end
+  prime.include?(num)
 end
