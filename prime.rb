@@ -1,9 +1,6 @@
 def prime?(num)
   prime = (2..num).to_a
   prime.each do |i|
-    prime.each do |j|
-      if j % i == 0 && j != i 
-        
-    end
+    prime.delete_if{|j| j % i == 0 && j != i} 
   end
 end
